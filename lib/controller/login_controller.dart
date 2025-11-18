@@ -17,6 +17,10 @@ class LoginController extends GetxController {
     super.onInit();
   }
 
+  void register() {
+    Get.toNamed(AppRoutes.register);
+  }
+
   Future<void> login() async {
     isLoading.value = true;
     try {
@@ -37,7 +41,7 @@ class LoginController extends GetxController {
 
         print("[DEBUG] Data API disimpan ke SharedPref: ${prefs.getKeys()}");
 
-        Get.offAllNamed(AppRoutes.dashboard);
+        Get.offAllNamed(AppRoutes.splashscreen);
       } else {
         Get.snackbar(
           'Login gagal',

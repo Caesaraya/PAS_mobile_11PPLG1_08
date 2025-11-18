@@ -85,6 +85,7 @@ class HomePage extends StatelessWidget {
                               color: Colors.white70,
                             ),
                           ),
+
                           Text(
                             "${c.rating.rate} (${c.rating.count})",
                             style: const TextStyle(

@@ -1,11 +1,15 @@
 import 'package:get/get.dart';
 import 'package:pas_mobile_11pplg1_08/binding/login_binding.dart';
 import 'package:pas_mobile_11pplg1_08/binding/nav_binding.dart';
+import 'package:pas_mobile_11pplg1_08/binding/register_binding.dart';
+import 'package:pas_mobile_11pplg1_08/binding/splashscreen_binding.dart';
 import 'package:pas_mobile_11pplg1_08/page/dashboard_page.dart';
 import 'package:pas_mobile_11pplg1_08/page/login_page.dart';
 import 'package:pas_mobile_11pplg1_08/page/menu/home_page.dart';
 import 'package:pas_mobile_11pplg1_08/page/menu/keranjang_page.dart';
 import 'package:pas_mobile_11pplg1_08/page/menu/profile_page.dart';
+import 'package:pas_mobile_11pplg1_08/page/register_page.dart';
+import 'package:pas_mobile_11pplg1_08/page/splashsreen_page.dart';
 import 'routes.dart';
 
 class AppPages {
@@ -14,6 +18,16 @@ class AppPages {
       name: AppRoutes.login,
       page: () => LoginPage(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.register,
+      page: () => RegisterPage(),
+      binding: RegisterBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.splashscreen,
+      page: () => SplashsreenPage(),
+      binding: SplashscreenBinding(),
     ),
 
     GetPage(
