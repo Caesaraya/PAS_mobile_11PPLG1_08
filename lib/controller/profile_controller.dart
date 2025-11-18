@@ -12,12 +12,9 @@ class ProfileController extends GetxController {
       textConfirm: "Logout",
       confirmTextColor: Colors.white,
       onConfirm: () async {
-        // Tutup dialog
         Get.back();
-        // Bersihkan data login yang tersimpan
         final prefs = await SharedPreferences.getInstance();
         await prefs.clear();
-        // Arahkan kembali ke halaman login
         Get.offAllNamed(AppRoutes.splashscreen);
       },
     );
