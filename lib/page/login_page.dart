@@ -69,7 +69,6 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 20),
                       child: CustomButton(
                         text: "Login",
                         backgroundColor: Colors.black,
@@ -77,9 +76,7 @@ class LoginPage extends StatelessWidget {
                         onPressed: controller.login,
                       ),
                     ),
-                    Text('atau'),
                     Container(
-                      margin: EdgeInsets.only(top: 20),
                       child: CustomButton(
                         text: "Register",
                         backgroundColor: Colors.black,

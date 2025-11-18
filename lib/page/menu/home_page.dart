@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pas_mobile_11pplg1_08/controller/favorit_product_list.dart';
 import 'package:pas_mobile_11pplg1_08/controller/store_controller.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
 
   final controller = Get.find<StoreController>();
+  final cartC = Get.put(CartController());
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +102,14 @@ class HomePage extends StatelessWidget {
                               color: Colors.white,
                               size: 30,
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              cartC.addItem(c);
+                              Get.snackbar(
+                                "Added",
+                                "Berhasil ditambahkan ke keranjang",
+                                snackPosition: SnackPosition.BOTTOM,
+                              );
+                            },
                           ),
                         ],
                       ),
