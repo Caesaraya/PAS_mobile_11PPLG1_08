@@ -47,7 +47,6 @@ class RegisterPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
 
-                    // Username
                     CustomTextField(
                       hintText: "Username",
                       controller: controller.usernameController,
@@ -55,7 +54,6 @@ class RegisterPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 15),
 
-                    // Password
                     CustomTextField(
                       hintText: "Password",
                       controller: controller.passwordController,
@@ -64,7 +62,6 @@ class RegisterPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 15),
 
-                    // Full Name
                     CustomTextField(
                       hintText: "Full Name",
                       controller: controller.fullNameController,
@@ -72,7 +69,6 @@ class RegisterPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 15),
 
-                    // Email
                     CustomTextField(
                       hintText: "Email",
                       controller: controller.emailController,
@@ -80,7 +76,6 @@ class RegisterPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 25),
 
-                    // Register Button
                     CustomButton(
                       text: "Register",
                       backgroundColor: Colors.black,

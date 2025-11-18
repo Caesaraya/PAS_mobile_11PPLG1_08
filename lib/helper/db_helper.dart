@@ -12,7 +12,6 @@ class CartDB {
     return _db!;
   }
 
-  // INIT DATABASE
   static Future<Database> initDB() async {
     String path = join(await getDatabasesPath(), 'cart.db');
 
@@ -32,11 +31,9 @@ class CartDB {
     );
   }
 
-  // ADD ITEM (tanpa duplikat)
   static Future<void> addToCart(Store item) async {
     final db = await database;
 
-    // Cek item sudah ada atau belum
     final check = await db.query('cart', where: 'id = ?', whereArgs: [item.id]);
 
     if (check.isEmpty) {
@@ -49,13 +46,11 @@ class CartDB {
     }
   }
 
-  // GET ALL ITEMS
   static Future<List<Map<String, dynamic>>> getCart() async {
     final db = await database;
     return db.query('cart');
   }
 
-  // DELETE ITEM
   static Future<void> removeItem(int id) async {
     final db = await database;
     await db.delete('cart', where: 'id = ?', whereArgs: [id]);

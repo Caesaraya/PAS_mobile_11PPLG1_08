@@ -47,7 +47,6 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
 
-                    // CONTENT
                     Padding(
                       padding: const EdgeInsets.all(14),
                       child: Column(

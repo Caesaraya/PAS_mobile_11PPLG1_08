@@ -38,7 +38,6 @@ class KeranjangPage extends StatelessWidget {
                 padding: const EdgeInsets.all(12),
                 child: Row(
                   children: [
-                    // IMAGE
                     ClipRRect(
                       borderRadius: BorderRadius.circular(12),
                       child: Image.network(
@@ -51,7 +50,6 @@ class KeranjangPage extends StatelessWidget {
 
                     const SizedBox(width: 12),
 
-                    // TEXT AREA
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,7 +76,6 @@ class KeranjangPage extends StatelessWidget {
                       ),
                     ),
 
-                    // DELETE BUTTON
                     IconButton(
                       icon: const Icon(Icons.delete, color: Colors.red),
                       onPressed: () {
